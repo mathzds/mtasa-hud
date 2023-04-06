@@ -10,7 +10,7 @@ local parent_x = x / 2 - parent_w * scale / 2 - (800) * scale / 2 * scale - (50)
 local parent_y = y / 2 - parent_h * scale / 2 + (800) * scale / 2 * scale - (50) * scale
 
 local tick = getTickCount()
-local circleScale, sizeStroke = 65, 3
+local circleScale, sizeStroke = 68, 4
 local circleLeft, circleTop = circleScale + 35, x - circleScale - 25
 
 -- remove hud components
@@ -23,12 +23,12 @@ end)
 -- such responsive resolution
 addEventHandler("onClientResourceStart", root, function(x, y)
     local x, y = guiGetScreenSize()
-    local circleScale, sizeStroke = 70, 3
     if ((x >= 1920) and (y >= 1080)) then
         scale = math.min(math.max(y / 1080, 0.50), 2)
         parent_x = x / 2 - parent_w * scale / 2 - (1400) * scale / 2 * scale - (50) * scale
         parent_y = y / 2 - parent_h * scale / 2 + (1000) * scale / 2 * scale - (50) * scale
         circleScale, sizeStroke = 70, 3
+        circleLeft, circleTop = circleScale + 35, parent_x - circleScale - 25
     end
 end)
 
