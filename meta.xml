@@ -1,0 +1,16 @@
+<meta>
+    <info author="solex" description="a hud script for mta" type="script" version="1.0.0" />
+
+    <script src="src/utils/uHud.lua" type="shared" protected="true" />
+
+    <script src="src/scripts/cHud.lua" type="client" protected="true"  />
+    <script src="src/scripts/sHud.lua" type="server" />
+
+    <file src="src/assets/background.png"/>
+    <file src="src/assets/circle.png"/>
+
+    <file src="src/assets/icons/armor.png"/>
+    <file src="src/assets/icons/heart.png"/>
+    <file src="src/assets/icons/pizza.png"/>
+    <file src="src/assets/icons/water.png"/>
+</meta>
